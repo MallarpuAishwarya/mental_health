@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="https://behandler-guiden.dk/wp-content/uploads/2022/01/istockphoto-stress.jpg" alt="Banner" class="banner-image">
+
+    <div class="form-container">
+        <h2>Form 1: Student Survey on Anxiety and Anger</h2>
+        <form action="submit_form.php" method="post">
+            <label>Name:</label><br>
+        <input type="text" name="Name" required><br><br>
+        <label>Email:</label><br>
+        <input type ="Email" name="Email" required><br><br>
+        <label>Phone Number:</label><br>
+        <input type="tel" name="Phone" pattern="[0-9]{10}" required><br><br>
+        <label>Age:</label><br>
+        <input type="number" name="Age" min="1" max="120" required><br><br>
+        <label>Gender:</label><br>
+        <input type="radio" name="Gender" value="Male" required> Male<br>
+        <input type="radio" name="Gender" value="Female" required> Female<br>
+        <input type="radio" name="Gender" value="Other" required> Other<br><br>
+        <p><strong>Instruction:</strong>for each statement, choose one:</p>
+
+            <div class="form-group">
+                <p>1. I often feel nervous or worried.</p>
+                <div class="radio-group">
+                    <label><input type="radio" name="Q1" value="1" required> Strongly Disagree</label>
+                    <label><input type="radio" name="Q1" value="2"> Disagree</label>
+                    <label><input type="radio" name="Q1" value="3"> Neutral</label>
+                    <label><input type="radio" name="Q1" value="4"> Agree</label>
+                    <label><input type="radio" name="Q1" value="5"> Strongly Agree</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <p>2. I get angry quickly.</p>
+                <div class="radio-group">
+                    <label><input type="radio" name="Q2" value="1" required> Strongly Disagree</label>
+                    <label><input type="radio" name="Q2" value="2"> Disagree</label>
+                    <label><input type="radio" name="Q2" value="3"> Neutral</label>
+                    <label><input type="radio" name="Q2" value="4"> Agree</label>
+                    <label><input type="radio" name="Q2" value="5"> Strongly Agree</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <p>3. I feel anxious in public places.</p>
+                <div class="radio-group">
+                    <label><input type="radio" name="Q3" value="1" required> Strongly Disagree</label>
+                    <label><input type="radio" name="Q3" value="2"> Disagree</label>
+                    <label><input type="radio" name="Q3" value="3"> Neutral</label>
+                    <label><input type="radio" name="Q3" value="4"> Agree</label>
+                    <label><input type="radio" name="Q3" value="5"> Strongly Agree</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <p>4. I have trouble controlling anger.</p>
+                <div class="radio-group">
+                    <label><input type="radio" name="Q4" value="1" required> Strongly Disagree</label>
+                    <label><input type="radio" name="Q4" value="2"> Disagree</label>
+                    <label><input type="radio" name="Q4" value="3"> Neutral</label>
+                    <label><input type="radio" name="Q4" value="4"> Agree</label>
+                    <label><input type="radio" name="Q4" value="5"> Strongly Agree</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <p>5. I worry about things I can't control.</p>
+                <div class="radio-group">
+                    <label><input type="radio" name="Q5" value="1" required> Strongly Disagree</label>
+                    <label><input type="radio" name="Q5" value="2"> Disagree</label>
+                    <label><input type="radio" name="Q5" value="3"> Neutral</label>
+                    <label><input type="radio" name="Q5" value="4"> Agree</label>
+                    <label><input type="radio" name="Q5" value="5"> Strongly Agree</label>
+                </div>
+            </div>
+
+            <input type="submit" value="Next">
+        </form>
+    </div>
+
+    <footer>
+        <img src="https://i.pinimg.com/736x/07/5c/09/075c09d726c7f0dcbdeacbe82d5b0d49.jpg" alt="Feedback Emoji" class="footer-emoji">
+    </footer>
+</body>
+</html>
